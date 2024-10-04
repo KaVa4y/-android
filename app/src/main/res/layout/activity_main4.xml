@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-78dp">
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Изображение блюда"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Плов"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="241dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="136dp"
+        android:text="1 кг длиннозёрного риса 1 кг баранины 1 кг моркови 300 мл растительного масла 4 небольшие луковицы 2 небольших сухих острых перчика чеснок – 2 головки 1 ст. л. сушеного барбариса 1 ст. л. зиры 1 ч. л. семян кориандра соль"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="413dp"
+        android:layout_height="257dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Мясо тщательно промоем и обсушим. Затем нарежем на небольшие кусочки, примерно по 4 см. Почистим морковку и нарежем тонкими, примерно по 0,5 см в толщину, полосками. Очистим лук, нарежем тонкими полукольцами или помельче. Лучше всего плов готовить, конечно же, в казане. Но можно в толстостенной кастрюле. Наливаем в казан или кастрюлю масло и разогреваем на сильном огне. Бросим в разогретое масло немного лука и обжарим его до темно-коричневого цвета. Затем убираем лук из казана. Выкладываем в разогретое масло мясо. Минуты через 3 перемешиваем и продолжаем обжаривать на сильном огне до любимой вами степени. Кто-то ведь любит слегка подрумяненное мясо, а кому-то по нраву сильно обжаренные кусочки. Мясо обжарилось, добавляем лук и перемешиваем. Обжариваем минут 5-7. Не забываем перемешивать, ведь готовим на большом огне! Теперь добавим полосочки моркови. Все перемешиваем и обжариваем. Готовим либо до подрумянивания моркови, либо до мягкости. Опять же, кому как нравится. А теперь добавим примерно полтора-два стакана горячей воды, чайную ложку соли и приправу для плова. Даем покипеть минут 15-20 под крышкой на среднем огне. Тщательно промываем под проточной водой рис, чтобы вымыть из него весь крахмал. Чтобы у вас гарантированно получился плов, а не каша, лучше возьмите пропаренный рис. Выкладываем промытый рис в казан. Разравниваем рис и доливаем горячей воды. Жидкость должна покрывать рис примерно на 2,5 см. Добавим соль. Готовим без крышки на среднем огне. Когда выкипит жидкость и рис окажется на поверхности, собираем его небольшой горкой. Делаем несколько дырок черенком ложки до дна казана или кастрюли. И плотно закрываем плов крышкой. Уменьшаем огонь до маленького и готовим еще минут 20. Затем выключаем огонь, и пусть плов постоит еще минут 15. Раскладываем плов по тарелкам или выкладываем в одно большое блюдо. Приятного аппетита!"
+            app:layout_constraintHorizontal_bias="0.505" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="На главную"
+        android:onClick="NavigateTo3"
+        android:backgroundTint="#F000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="123dp"
+        android:layout_height="108dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
